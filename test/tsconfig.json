@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+		"watch": true,
+		"target": "ES6"
+    },
+    "files": [
+	"types.ts",
+	"destructuring.ts",
+        "interfaces.ts",
+	"classes.ts",
+	"functions.ts",
+	"generics.ts"
+    ]
+}
