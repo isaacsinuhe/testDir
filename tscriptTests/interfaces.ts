@@ -1,20 +1,24 @@
-//  //interfaces
-// interface LabelledValue {
-//     label: string
-// }
-//
-// function printLabel(labelledObj: LabelledValue) {
-//     console.log(labelledObj.label);
-// }
-//
-// let myObj = {size: 10, label: "Size 10 Object"};
-// printLabel(myObj);
+ //interfaces
+interface LabelledValue {
+    label: string
+}
+type someth = {
+	label: string
+}
+// label prop
+function printLabel(labelledObj: someth) {
+    console.log(labelledObj.label);
+}
+
+let myObj = {size: 10, label: "Size 10 Object"};
+
+printLabel(myObj);
 
 // // default values
 // interface SquareConfig {
 //     color?: string;
 //     width?: number;
-// 	// [propName: string]: any
+	// [propName: string]: any
 // }
 //
 // function createSquare(config: SquareConfig): {color: string; area: number;}{
