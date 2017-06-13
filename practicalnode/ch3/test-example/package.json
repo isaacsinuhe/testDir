@@ -1,1 +1,6 @@
-{"scripts":{"test":"mocha test-expect.js"}}
+{
+  "scripts": {
+    "test": "mocha test-expect.js"
+  },
+  "dependencies": {}
+}

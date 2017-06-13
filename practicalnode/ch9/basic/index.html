@@ -10,6 +10,9 @@
       ws.onmessage = function(event) {
         console.log('server message: ', event.data)
       };
+      ws.onerror = function (event) {
+        console.log('server error message', event.data)
+      }
     </script>
   </body>
 </html>

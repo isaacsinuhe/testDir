@@ -56,7 +56,7 @@ app.get('/articles/:slug', routes.article.show);
 app.get('/api/articles', routes.article.list);
 app.post('/api/articles', routes.article.add);
 app.put('/api/articles/:id', routes.article.edit);
-app.del('/api/articles/:id', routes.article.del);
+app.delete('/api/articles/:id', routes.article.del);
 
 
 
@@ -77,6 +77,7 @@ var boot = function () {
 var shutdown = function() {
   server.close();
 }
+
 if (require.main === module) {
   boot();
 } else {

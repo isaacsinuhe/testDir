@@ -2,7 +2,7 @@ var hapi = require('hapi'),
   server = hapi.createServer('localhost', 3000)
   mongoskin = require('mongoskin')
 
-var db = mongoskin.db('mongodb://@localhost:27017/test', {safe:true})
+var db = mongoskin.db('mongodb://@localhost:27017/test', {db:{safe:true}})
 var id = mongoskin.helper.toObjectID
 
 var loadCollection = function(name, callback) {

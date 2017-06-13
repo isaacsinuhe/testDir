@@ -15,5 +15,5 @@ describe('String#split', function(){
     for (var i=0; i<expected.length; i++) {
       assert.equal(expected[i], current[i], i + 'element is equal');
     }
-  })    
-})
+  });    
+});

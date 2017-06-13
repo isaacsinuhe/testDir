@@ -1,0 +1,12 @@
+{
+  "name": "ch7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gravatar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

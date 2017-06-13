@@ -6,7 +6,11 @@ var express = require('express'),
   http = require('http'),
   path = require('path'),
   mongoose = require('mongoose'),
+
+/***********************************************************************/
   models = require('./models'),
+/***********************************************************************/
+
   dbUrl = process.env.MONGOHQ_URL || 'mongodb://@localhost:27017/blog',
   db = mongoose.connect(dbUrl, {safe: true}),
 
@@ -49,6 +53,7 @@ everyauth.everymodule.findUserById( function (user, callback) {
 var app = express();
 app.locals.appTitle = "blog-express";
 
+/**inyectando modelos */
 app.use(function(req, res, next) {
   if (!models.Article || ! models.User) return next(new Error("No models."))
   req.models = models;

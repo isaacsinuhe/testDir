@@ -1,0 +1,20 @@
+{
+  "name": "editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "derby": "^0.9.7",
+    "express": "^4.15.3",
+    "livedb-mongo": "^0.4.1",
+    "mongodb": "^1.4.40",
+    "racer-browserchannel": "^0.5.0",
+    "redis": "^2.7.1"
+  }
+}
